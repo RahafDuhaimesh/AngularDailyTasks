@@ -1,0 +1,9 @@
+<div class="card" style="width: 18rem;" *ngFor="let item of arrayOfData">
+  <img class="card-img-top" src="{{item.subServiceImage}}" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">{{item.subServiceName}}</h5>
+    <p class="card-text">{{item.subServiceDescription}}</p>
+    <a routerLink="/subservicedetails/{{item.subServiceId}}" class="btn btn-primary">Details</a>
+  </div>
+</div>
+

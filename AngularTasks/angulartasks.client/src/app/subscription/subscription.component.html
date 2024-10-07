@@ -1,0 +1,17 @@
+<h1>subscriptions!</h1>
+
+<br />
+
+<!-- Loop through arrayOfData and display subscription info -->
+<div class="card" style="width: 18rem;" *ngFor="let item of arrayOfData">
+  <div class="card-body">
+    <h5 class="card-title">{{item.subscriptionName}}</h5>
+    <p class="card-text">Amount: {{item.subscriptionAmount}} Months</p>
+    <p class="card-text">Description: {{item.subscriptionDescription}}</p>
+
+    <!-- Call AddSubscription function on button click -->
+    <button class="btn btn-primary" type="button" (click)="AddSubscription(item.subscriptionId)">
+      Subscribe now
+    </button>
+  </div>
+</div>
